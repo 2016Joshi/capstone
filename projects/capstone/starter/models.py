@@ -8,54 +8,25 @@ import json
 
 load_dotenv()
 
-# database_name = "capstone"
-# base_path = os.environ["DATABASE_URL"]
-# database_path='{}/{}'.format(base_path, database_name)
-
 database_path = os.environ["DATABASE_URL"]
 
 db = SQLAlchemy()
 
-def setup_db(app):
+
+def setup_db(app, database_path=database_path):
     app.config["SQLALCHEMY_DATABASE_URI"] = database_path
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     db.app = app
     db.init_app(app)
 
 
-def db_drop_and_create_all():
-    db.drop_all()
-    db.create_all()
-    # add one demo row which is helping in POSTMAN test
-    movie = Movie(
-        title='Spider Man',
-        release_date=datetime.datetime.now()
-    )
-    movie.insert()
-
-    actor = Actor(
-        name='Joshi',
-        age = 35,
-        gender = 'Male'
-    )
-    actor.insert()
-
-# ROUTES
-
-'''
-Drink
-a persistent drink entity, extends the base SQLAlchemy Model
-'''
-
-
-class Movie(db.Model):
+class Movie (db.Model):
     '''model for movies'''
-    __tablename__='movies'
-    
+    __tablename__ = 'movies'
+
     id = Column(Integer, primary_key=True)
     title = Column(String(120), unique=True, nullable=False)
     release_date = Column(DateTime(), nullable=False)
-
 
     '''
     insert()
@@ -82,7 +53,6 @@ class Movie(db.Model):
         db.session.delete(self)
         db.session.commit()
 
-    
     def update(self):
         db.session.commit()
 
@@ -93,16 +63,15 @@ class Movie(db.Model):
             'release_date': self.release_date
         }
 
+
 class Actor(db.Model):
     '''model for actors'''
-    __tablename__='actors'
-    
+    __tablename__ = 'actors'
+
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
     age = Column(Integer, nullable=False)
     gender = Column(String, nullable=False)
-    
-
 
     '''
     insert()
@@ -118,7 +87,6 @@ class Actor(db.Model):
         db.session.delete(self)
         db.session.commit()
 
-    
     def update(self):
         db.session.commit()
 
