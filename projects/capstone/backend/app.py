@@ -1,4 +1,5 @@
 from crypt import methods
+from datetime import datetime
 import os
 from flask import Flask, render_template, request, abort, jsonify
 from flask_sqlalchemy import SQLAlchemy
@@ -66,7 +67,7 @@ def create_app(test_config=None):
 
         if title is None or release_date is None:
             abort(400)
-
+        release_date = datetime.strptime(release_date, '%Y/%m/%d')
         movie = Movie(title=title, release_date=release_date)
         try:
             movie.insert()
