@@ -247,7 +247,17 @@ Sample RBAC error response
 ```
 
 ## Testing
-To run the tests, run
+To run the tests,
+
+Replace the jwt tokens in test_app.py with the ones generated on the website.
+
+For testing locally, we need to reset database. To reset database, run
+```
+python manage.py db downgrade
+python manage.py db upgrade
+
+```
+
 ```
 python3 test_app.py
 ```
