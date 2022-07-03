@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "56d8eb7e-0984-484c-a842-7eeb150e63eb",
+		"name": "capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9167138"
+	},
+	"item": [
+		{
+			"name": "getMovies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjAzeEtha09Zdk8xa1A1Rk5naHRoYSJ9.eyJpc3MiOiJodHRwczovL2pvc2hpZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjI2Y2M5Zjk3MTQwMzMwMDcwYjM0Njk2IiwiYXVkIjoiY2FzdGluZy1hZ2VuY3kiLCJpYXQiOjE2NTY4NzkzMzEsImV4cCI6MTY1Njk2NTczMSwiYXpwIjoiclIzTzJCTDJsVGVUcFUxMkJ2NEhhZXZUNW1wWVNPb2oiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.Vc_QZBoKCeaz38XlZSj9C34vq6u_1XcaCH5cwop1UXQkmxSrnVKlRp70ncomxm-ffgR7ZLOSbNgbVmSjskvupV9xZ-PwO5EYIRFsUKkoXb-IP13gLwpG5e0H_pZ7O1gEjePjjtugMioP7ocUqNFy9eYp7eW8sJaohcpLOv_tb1FxObvlRLWTBTO6D7xfT1h_SvZfTTiy-puVclxLxmw3rjvEIs8G1PVD1AymiCMP2Nus8qv-qnGZRlcNPqRgDNPYbyU_xEfzdbI_pr2HU9W_T2EnuWU1MaSW4FnEm3B1T-CHl1RKurzMq2c9CG9de5kGS7MFY3hMzaL4YlYFvJHsfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://shrinivas-capstone.herokuapp.com/movies",
+					"protocol": "https",
+					"host": [
+						"shrinivas-capstone",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMovie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjAzeEtha09Zdk8xa1A1Rk5naHRoYSJ9.eyJpc3MiOiJodHRwczovL2pvc2hpZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjI2Y2M5Zjk3MTQwMzMwMDcwYjM0Njk2IiwiYXVkIjoiY2FzdGluZy1hZ2VuY3kiLCJpYXQiOjE2NTY4NzkzMzEsImV4cCI6MTY1Njk2NTczMSwiYXpwIjoiclIzTzJCTDJsVGVUcFUxMkJ2NEhhZXZUNW1wWVNPb2oiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.Vc_QZBoKCeaz38XlZSj9C34vq6u_1XcaCH5cwop1UXQkmxSrnVKlRp70ncomxm-ffgR7ZLOSbNgbVmSjskvupV9xZ-PwO5EYIRFsUKkoXb-IP13gLwpG5e0H_pZ7O1gEjePjjtugMioP7ocUqNFy9eYp7eW8sJaohcpLOv_tb1FxObvlRLWTBTO6D7xfT1h_SvZfTTiy-puVclxLxmw3rjvEIs8G1PVD1AymiCMP2Nus8qv-qnGZRlcNPqRgDNPYbyU_xEfzdbI_pr2HU9W_T2EnuWU1MaSW4FnEm3B1T-CHl1RKurzMq2c9CG9de5kGS7MFY3hMzaL4YlYFvJHsfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://shrinivas-capstone.herokuapp.com/movies/2",
+					"protocol": "https",
+					"host": [
+						"shrinivas-capstone",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getActors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjAzeEtha09Zdk8xa1A1Rk5naHRoYSJ9.eyJpc3MiOiJodHRwczovL2pvc2hpZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjI2Y2M5Zjk3MTQwMzMwMDcwYjM0Njk2IiwiYXVkIjoiY2FzdGluZy1hZ2VuY3kiLCJpYXQiOjE2NTY4NzkzMzEsImV4cCI6MTY1Njk2NTczMSwiYXpwIjoiclIzTzJCTDJsVGVUcFUxMkJ2NEhhZXZUNW1wWVNPb2oiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.Vc_QZBoKCeaz38XlZSj9C34vq6u_1XcaCH5cwop1UXQkmxSrnVKlRp70ncomxm-ffgR7ZLOSbNgbVmSjskvupV9xZ-PwO5EYIRFsUKkoXb-IP13gLwpG5e0H_pZ7O1gEjePjjtugMioP7ocUqNFy9eYp7eW8sJaohcpLOv_tb1FxObvlRLWTBTO6D7xfT1h_SvZfTTiy-puVclxLxmw3rjvEIs8G1PVD1AymiCMP2Nus8qv-qnGZRlcNPqRgDNPYbyU_xEfzdbI_pr2HU9W_T2EnuWU1MaSW4FnEm3B1T-CHl1RKurzMq2c9CG9de5kGS7MFY3hMzaL4YlYFvJHsfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://shrinivas-capstone.herokuapp.com/actors",
+					"protocol": "https",
+					"host": [
+						"shrinivas-capstone",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteActor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjAzeEtha09Zdk8xa1A1Rk5naHRoYSJ9.eyJpc3MiOiJodHRwczovL2pvc2hpZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjI2Y2M5Zjk3MTQwMzMwMDcwYjM0Njk2IiwiYXVkIjoiY2FzdGluZy1hZ2VuY3kiLCJpYXQiOjE2NTY4NzkzMzEsImV4cCI6MTY1Njk2NTczMSwiYXpwIjoiclIzTzJCTDJsVGVUcFUxMkJ2NEhhZXZUNW1wWVNPb2oiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.Vc_QZBoKCeaz38XlZSj9C34vq6u_1XcaCH5cwop1UXQkmxSrnVKlRp70ncomxm-ffgR7ZLOSbNgbVmSjskvupV9xZ-PwO5EYIRFsUKkoXb-IP13gLwpG5e0H_pZ7O1gEjePjjtugMioP7ocUqNFy9eYp7eW8sJaohcpLOv_tb1FxObvlRLWTBTO6D7xfT1h_SvZfTTiy-puVclxLxmw3rjvEIs8G1PVD1AymiCMP2Nus8qv-qnGZRlcNPqRgDNPYbyU_xEfzdbI_pr2HU9W_T2EnuWU1MaSW4FnEm3B1T-CHl1RKurzMq2c9CG9de5kGS7MFY3hMzaL4YlYFvJHsfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://shrinivas-capstone.herokuapp.com/actors/2",
+					"protocol": "https",
+					"host": [
+						"shrinivas-capstone",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"actors",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addMovie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjAzeEtha09Zdk8xa1A1Rk5naHRoYSJ9.eyJpc3MiOiJodHRwczovL2pvc2hpZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjI2Y2M5Zjk3MTQwMzMwMDcwYjM0Njk2IiwiYXVkIjoiY2FzdGluZy1hZ2VuY3kiLCJpYXQiOjE2NTY4NzkzMzEsImV4cCI6MTY1Njk2NTczMSwiYXpwIjoiclIzTzJCTDJsVGVUcFUxMkJ2NEhhZXZUNW1wWVNPb2oiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.Vc_QZBoKCeaz38XlZSj9C34vq6u_1XcaCH5cwop1UXQkmxSrnVKlRp70ncomxm-ffgR7ZLOSbNgbVmSjskvupV9xZ-PwO5EYIRFsUKkoXb-IP13gLwpG5e0H_pZ7O1gEjePjjtugMioP7ocUqNFy9eYp7eW8sJaohcpLOv_tb1FxObvlRLWTBTO6D7xfT1h_SvZfTTiy-puVclxLxmw3rjvEIs8G1PVD1AymiCMP2Nus8qv-qnGZRlcNPqRgDNPYbyU_xEfzdbI_pr2HU9W_T2EnuWU1MaSW4FnEm3B1T-CHl1RKurzMq2c9CG9de5kGS7MFY3hMzaL4YlYFvJHsfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"New Movie\",\n    \"release_date\": \"02/07/2022\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shrinivas-capstone.herokuapp.com/movies",
+					"protocol": "https",
+					"host": [
+						"shrinivas-capstone",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateMovie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjAzeEtha09Zdk8xa1A1Rk5naHRoYSJ9.eyJpc3MiOiJodHRwczovL2pvc2hpZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjI2Y2M5Zjk3MTQwMzMwMDcwYjM0Njk2IiwiYXVkIjoiY2FzdGluZy1hZ2VuY3kiLCJpYXQiOjE2NTY4NzkzMzEsImV4cCI6MTY1Njk2NTczMSwiYXpwIjoiclIzTzJCTDJsVGVUcFUxMkJ2NEhhZXZUNW1wWVNPb2oiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.Vc_QZBoKCeaz38XlZSj9C34vq6u_1XcaCH5cwop1UXQkmxSrnVKlRp70ncomxm-ffgR7ZLOSbNgbVmSjskvupV9xZ-PwO5EYIRFsUKkoXb-IP13gLwpG5e0H_pZ7O1gEjePjjtugMioP7ocUqNFy9eYp7eW8sJaohcpLOv_tb1FxObvlRLWTBTO6D7xfT1h_SvZfTTiy-puVclxLxmw3rjvEIs8G1PVD1AymiCMP2Nus8qv-qnGZRlcNPqRgDNPYbyU_xEfzdbI_pr2HU9W_T2EnuWU1MaSW4FnEm3B1T-CHl1RKurzMq2c9CG9de5kGS7MFY3hMzaL4YlYFvJHsfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"New Movie1234\",\n    \"release_date\": \"02/07/2022\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shrinivas-capstone.herokuapp.com/movies/4",
+					"protocol": "https",
+					"host": [
+						"shrinivas-capstone",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addActors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjAzeEtha09Zdk8xa1A1Rk5naHRoYSJ9.eyJpc3MiOiJodHRwczovL2pvc2hpZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjI2Y2M5Zjk3MTQwMzMwMDcwYjM0Njk2IiwiYXVkIjoiY2FzdGluZy1hZ2VuY3kiLCJpYXQiOjE2NTY4NzkzMzEsImV4cCI6MTY1Njk2NTczMSwiYXpwIjoiclIzTzJCTDJsVGVUcFUxMkJ2NEhhZXZUNW1wWVNPb2oiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.Vc_QZBoKCeaz38XlZSj9C34vq6u_1XcaCH5cwop1UXQkmxSrnVKlRp70ncomxm-ffgR7ZLOSbNgbVmSjskvupV9xZ-PwO5EYIRFsUKkoXb-IP13gLwpG5e0H_pZ7O1gEjePjjtugMioP7ocUqNFy9eYp7eW8sJaohcpLOv_tb1FxObvlRLWTBTO6D7xfT1h_SvZfTTiy-puVclxLxmw3rjvEIs8G1PVD1AymiCMP2Nus8qv-qnGZRlcNPqRgDNPYbyU_xEfzdbI_pr2HU9W_T2EnuWU1MaSW4FnEm3B1T-CHl1RKurzMq2c9CG9de5kGS7MFY3hMzaL4YlYFvJHsfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"new actor\",\n    \"age\": \"35\",\n    \"gender\":\"Female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shrinivas-capstone.herokuapp.com/actors",
+					"protocol": "https",
+					"host": [
+						"shrinivas-capstone",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateActor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjAzeEtha09Zdk8xa1A1Rk5naHRoYSJ9.eyJpc3MiOiJodHRwczovL2pvc2hpZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjI2Y2M5Zjk3MTQwMzMwMDcwYjM0Njk2IiwiYXVkIjoiY2FzdGluZy1hZ2VuY3kiLCJpYXQiOjE2NTY4NzkzMzEsImV4cCI6MTY1Njk2NTczMSwiYXpwIjoiclIzTzJCTDJsVGVUcFUxMkJ2NEhhZXZUNW1wWVNPb2oiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.Vc_QZBoKCeaz38XlZSj9C34vq6u_1XcaCH5cwop1UXQkmxSrnVKlRp70ncomxm-ffgR7ZLOSbNgbVmSjskvupV9xZ-PwO5EYIRFsUKkoXb-IP13gLwpG5e0H_pZ7O1gEjePjjtugMioP7ocUqNFy9eYp7eW8sJaohcpLOv_tb1FxObvlRLWTBTO6D7xfT1h_SvZfTTiy-puVclxLxmw3rjvEIs8G1PVD1AymiCMP2Nus8qv-qnGZRlcNPqRgDNPYbyU_xEfzdbI_pr2HU9W_T2EnuWU1MaSW4FnEm3B1T-CHl1RKurzMq2c9CG9de5kGS7MFY3hMzaL4YlYFvJHsfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"new female actor\",\n    \"age\": \"35\",\n    \"gender\":\"Female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shrinivas-capstone.herokuapp.com/actors/3",
+					"protocol": "https",
+					"host": [
+						"shrinivas-capstone",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"actors",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
