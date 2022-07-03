@@ -67,7 +67,7 @@ def create_app(test_config=None):
 
         if title is None or release_date is None:
             abort(400)
-        release_date = datetime.strptime(release_date, '%Y/%m/%d')
+        release_date = datetime.strptime(release_date, '%d/%m/%Y')
         movie = Movie(title=title, release_date=release_date)
         try:
             movie.insert()
