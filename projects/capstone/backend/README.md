@@ -1,7 +1,7 @@
 # Casting Agency 
 The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies.Authorised users will be able to create, view, update, delete movies and actors details.
 
-Site url : 
+Backend url : https://shrinivas-capstone.herokuapp.com/
 
 ### Installing Dependencies for the Backend
 
